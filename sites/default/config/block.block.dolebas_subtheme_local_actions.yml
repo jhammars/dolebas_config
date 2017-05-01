@@ -1,0 +1,20 @@
+uuid: 641a4a8c-c11c-4dc4-8a3d-6fd5bf4df6e4
+langcode: en
+status: false
+dependencies:
+  theme:
+    - dolebas_subtheme
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: dolebas_subtheme_local_actions
+theme: dolebas_subtheme
+region: header
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

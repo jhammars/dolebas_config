@@ -1,0 +1,22 @@
+uuid: f24cad2c-e032-4fdd-9f2f-93cfc54e763f
+langcode: en
+status: false
+dependencies:
+  theme:
+    - dolebas_subtheme
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: dolebas_subtheme_local_tasks
+theme: dolebas_subtheme
+region: header
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

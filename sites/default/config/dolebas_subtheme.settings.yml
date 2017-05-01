@@ -1,0 +1,21 @@
+schemas:
+  bootstrap: 8000
+  dolebas_subtheme: 8000
+favicon:
+  mimetype: image/png
+  path: 'public://D7 (1)_0.png'
+  url: 'http://dev-merge.pantheonsite.io/themes/dolebas_subtheme/favicon.ico'
+  use_default: false
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: 'public://Dlogo9 (1)_0.png'
+  url: ''
+  use_default: false
+navbar_position: fixed-top
+fluid_container: 1
+table_responsive: '-1'
+table: ''

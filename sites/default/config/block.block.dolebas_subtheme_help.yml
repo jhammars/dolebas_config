@@ -1,0 +1,22 @@
+uuid: 1952e66f-7db8-4c9d-9020-c33be7ff1550
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - dolebas_subtheme
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: dolebas_subtheme_help
+theme: dolebas_subtheme
+region: help
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

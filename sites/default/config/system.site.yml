@@ -1,0 +1,14 @@
+uuid: b0e850dd-21ad-4843-a53b-329936665f0e
+name: Dolebas
+mail: johan.hammarstrm@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /front-page-view
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

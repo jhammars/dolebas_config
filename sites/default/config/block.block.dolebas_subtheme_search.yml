@@ -1,0 +1,22 @@
+uuid: 725794ea-2afb-41ef-8bec-11d700784371
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - dolebas_subtheme
+_core:
+  default_config_hash: F3d5hyAFunLh4PhGviJF019fHn1Z3_zy5gzsQ0tX1K0
+id: dolebas_subtheme_search
+theme: dolebas_subtheme
+region: sidebar_second
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }
