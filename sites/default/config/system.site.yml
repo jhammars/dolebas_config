@@ -1,14 +1,15 @@
-uuid: b0e850dd-21ad-4843-a53b-329936665f0e
-name: Dolebas
+uuid: 628a2b13-ed94-4611-95e3-28a535dab81a
+name: Develop3
 mail: johan.hammarstrm@gmail.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /front-page-view
+  front: /user/login
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
 default_langcode: en
 _core:
   default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
+UUID: 628a2b13-ed94-4611-95e3-28a535dab81a
