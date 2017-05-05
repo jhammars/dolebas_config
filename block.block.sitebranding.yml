@@ -1,0 +1,23 @@
+uuid: 4cf34e53-629d-4312-af97-855fca1cf7ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dolebas_subtheme
+id: sitebranding
+theme: dolebas_subtheme
+region: navigation
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }
