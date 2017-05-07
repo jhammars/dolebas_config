@@ -5,6 +5,8 @@ module:
   breakpoint: 0
   config: 0
   dblog: 0
+  default_content: 0
+  dolebas_default_content: 0
   dynamic_page_cache: 0
   field: 0
   file: 0
