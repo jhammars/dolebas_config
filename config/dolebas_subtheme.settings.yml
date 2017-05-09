@@ -4,7 +4,7 @@ schemas:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://dev-develop3.pantheonsite.io/themes/dolebas_subtheme/favicon.ico'
+  url: 'http://dev-develop2.pantheonsite.io/themes/dolebas_subtheme/favicon.ico'
   use_default: true
 features:
   comment_user_picture: true
