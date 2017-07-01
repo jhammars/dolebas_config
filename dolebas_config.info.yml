@@ -1,0 +1,6 @@
+name: Dolebas Config
+type: module
+description: Takes care of configuration
+core: 8.x
+configure: dolebas_config.config
+package: Dolebas

@@ -1,0 +1,9 @@
+dolebas_config.config:
+  path: '/admin/config/dolebas-config'
+  defaults:
+    _form: '\Drupal\dolebas_config\Form\ConfigForm'
+    _title: 'Dolebas Configuration'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
