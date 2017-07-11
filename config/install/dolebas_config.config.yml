@@ -1,0 +1,10 @@
+stripe_api_sk: sk_test_rg4Q5GAQKDZV2hcntElyWMXw
+stripe_api_pk: pk_test_sizOaYRJSKPbGhj5blDXZm1d
+cloudinary_cloud_name: dolebas
+cloudinary_auth_username: '172558783671836'
+cloudinary_auth_password: LAdq7ZvuU-NEKRoUQwVrtricxd8
+wistia_auth_username: api
+wistia_auth_password: 754d2c6b49acec61dd55f88836100981e2e76bd4a2045563ab7fc71ccc67dc88
+wistia_token: 754d2c6b49acec61dd55f88836100981e2e76bd4a2045563ab7fc71ccc67dc88
+wistia_project_id: bifsh58lcq
+cloudinary_upload_preset: apexn91s
