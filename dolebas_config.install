@@ -14,11 +14,12 @@ function dolebas_config_install() {
   
   // Set parameters
   $admin_theme = 'seven';
+  $base_theme = 'bootstrap';
   $default_theme = 'dolebas_subtheme';
-  $provider = 'dolebas';
 
   // Install default and admin theme
   \Drupal::service('theme_installer')->install([$admin_theme]);  
+  \Drupal::service('theme_installer')->install([$base_theme]);  
   \Drupal::service('theme_installer')->install([$default_theme]);
 
   // Set default admin theme
