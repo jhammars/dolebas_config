@@ -30,6 +30,7 @@ function dolebas_config_install() {
    ->save();
 
   // Remove unwanted blocks from default theme
+  $provider = 'dolebas';
   $ids = \Drupal::entityQuery('block')
             ->condition('theme', $default_theme)
             ->condition('settings.provider', $provider, '<>')
