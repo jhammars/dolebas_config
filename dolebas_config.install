@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions when the module is installed.
+ * 
+ */
+function dolebas_config_install() {
+
+  /**
+   * Install default theme and remove unwanted blocks.
+   */
+  
+  // Set parameters
+  $admin_theme = 'seven';
+  $default_theme = 'dolebas_subtheme';
+  $provider = 'dolebas';
+
+  // Install default and admin theme
+  \Drupal::service('theme_installer')->install([$admin_theme]);  
+  \Drupal::service('theme_installer')->install([$default_theme]);
+
+  // Set default admin theme
+  \Drupal::configFactory()
+   ->getEditable('system.theme')
+   ->set('admin', $admin_theme)   
+   ->set('default', $default_theme)
+   ->save();
+
+  // Remove unwanted blocks from default theme
+  $ids = \Drupal::entityQuery('block')
+            ->condition('theme', $default_theme)
+            ->condition('settings.provider', $provider, '<>')
+            ->execute();
+  $controller = \Drupal::entityTypeManager()->getStorage('block');
+  $entities = $controller->loadMultiple($ids);
+  $controller->delete($entities);
+
+}
