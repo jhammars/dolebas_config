@@ -17,9 +17,3 @@ smtp_username: postmaster@sandboxacc3f3f36f3b4b4e8ed9719f5e912642.mailgun.org
 smtp_password: 9586e24832acc19f1951557c7eee6dca
 smtp_from: info@dolebas.com
 smtp_fromname: Dolebas
-# smtp_client_hostname: ''
-# smtp_client_helo: ''
-# smtp_allowhtml: '0'
-# smtp_test_address: ''
-# smtp_debugging: false
-# prev_mail_system: php_mail
