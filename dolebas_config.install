@@ -8,6 +8,8 @@
  */
 function dolebas_config_install() {
 
+  module_set_weight('dolebas_config', -1);
+
   /**
    * Install default theme and remove unwanted blocks.
    */
@@ -38,5 +40,15 @@ function dolebas_config_install() {
   $controller = \Drupal::entityTypeManager()->getStorage('block');
   $entities = $controller->loadMultiple($ids);
   $controller->delete($entities);
+
+  // Set mailsystem default sender to SMTPMailSystem
+  \Drupal::service('config.factory')->getEditable('mailsystem.settings')->setData(array(
+    'theme' => 'current',
+    'defaults' => array(
+      'sender' => 'SMTPMailSystem',
+      'formatter' => 'php_mail',
+    ),
+  ))
+  ->save();
 
 }

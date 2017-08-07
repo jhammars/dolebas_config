@@ -8,3 +8,18 @@ wistia_auth_password: 754d2c6b49acec61dd55f88836100981e2e76bd4a2045563ab7fc71ccc
 wistia_token: 754d2c6b49acec61dd55f88836100981e2e76bd4a2045563ab7fc71ccc67dc88
 wistia_project_id: bifsh58lcq
 cloudinary_upload_preset: apexn91s
+smtp_on: true
+smtp_host: smtp.mailgun.org
+smtp_hostbackup: ''
+smtp_port: '2525'
+smtp_protocol: tls
+smtp_username: postmaster@sandboxacc3f3f36f3b4b4e8ed9719f5e912642.mailgun.org
+smtp_password: 9586e24832acc19f1951557c7eee6dca
+smtp_from: info@dolebas.com
+smtp_fromname: Dolebas
+# smtp_client_hostname: ''
+# smtp_client_helo: ''
+# smtp_allowhtml: '0'
+# smtp_test_address: ''
+# smtp_debugging: false
+# prev_mail_system: php_mail
