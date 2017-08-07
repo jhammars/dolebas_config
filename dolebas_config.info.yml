@@ -8,3 +8,5 @@ dependencies:
   - smtp:smtp
   - exclude_node_title:exclude_node_title
   - drupal:views
+  - mailsystem:mailsystem
+  
