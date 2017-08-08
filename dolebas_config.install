@@ -41,6 +41,14 @@ function dolebas_config_install() {
   $entities = $controller->loadMultiple($ids);
   $controller->delete($entities);
 
+  // Remove unwanted blocks from admin theme
+  $ids = \Drupal::entityQuery('block')
+            ->condition('id', 'seven_admin')
+            ->execute();
+  $controller = \Drupal::entityTypeManager()->getStorage('block');
+  $entities = $controller->loadMultiple($ids);
+  $controller->delete($entities);
+
   // Set mailsystem default sender to SMTPMailSystem
   \Drupal::service('config.factory')->getEditable('mailsystem.settings')->setData(array(
     'theme' => 'current',
