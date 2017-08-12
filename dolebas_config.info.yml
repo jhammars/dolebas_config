@@ -9,4 +9,5 @@ dependencies:
   - exclude_node_title:exclude_node_title
   - drupal:views
   - mailsystem:mailsystem
+  - url_redirect:url_redirect
   

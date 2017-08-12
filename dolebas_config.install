@@ -59,4 +59,17 @@ function dolebas_config_install() {
   ))
   ->save();
 
+  // Configure url_redirect custom db table (the module don't use Drupal config)
+  $query = \Drupal::database();
+  $query->insert('url_redirect')->fields(array(
+  'path' => 'user/*',
+  'roles' => '{"authenticated":"authenticated"}',
+  'users' => '',
+  'redirect_path' => '/',
+  'status' => '1',
+  'message' => 'No',
+  'check_for' => 'Role',
+  ))
+  ->execute();
+
 }
