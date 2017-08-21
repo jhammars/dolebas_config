@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.dolebas_dmca_notice
+    - field.storage.contact_message.field_i_have_read
+  enforced:
+    module:
+      - dolebas_config
+id: contact_message.dolebas_dmca_notice.field_i_have_read
+field_name: field_i_have_read
+entity_type: contact_message
+bundle: dolebas_dmca_notice
+label: 'I have read and understand all of the above and the implications of submitting this form'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

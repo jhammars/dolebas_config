@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.dolebas_dmca_notice
+    - field.storage.contact_message.field_i_swear_that
+  enforced:
+    module:
+      - dolebas_config
+id: contact_message.dolebas_dmca_notice.field_i_swear_that
+field_name: field_i_swear_that
+entity_type: contact_message
+bundle: dolebas_dmca_notice
+label: 'Please confirm'
+description: "I swear, under penalty of perjury, that the information in the notification is accurate and that I am the copyright owner or am authorized to act on behalf of the owner of an exclusive right that is allegedly infringed. (Please note that you may be liable for damages if you “knowingly materially misrepresent” your copyrights.)\r\n\r\n"
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

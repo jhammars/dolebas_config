@@ -10,4 +10,7 @@ dependencies:
   - drupal:views
   - mailsystem:mailsystem
   - url_redirect:url_redirect
-  
+  - address:address
+  - drupal:contact
+  - drupal:telephone
+  - drupal:link

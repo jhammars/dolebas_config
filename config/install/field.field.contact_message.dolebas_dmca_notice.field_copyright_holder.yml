@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.dolebas_dmca_notice
+    - field.storage.contact_message.field_copyright_holder
+  enforced:
+    module:
+      - dolebas_config    
+id: contact_message.dolebas_dmca_notice.field_copyright_holder
+field_name: field_copyright_holder
+entity_type: contact_message
+bundle: dolebas_dmca_notice
+label: 'Name of Copyright holder (either yourself or who you represent)'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.dolebas_dmca_notice
+    - field.storage.contact_message.field_i_acknowledge
+  enforced:
+    module:
+      - dolebas_config
+id: contact_message.dolebas_dmca_notice.field_i_acknowledge
+field_name: field_i_acknowledge
+entity_type: contact_message
+bundle: dolebas_dmca_notice
+label: 'Please confirm'
+description: "I acknowledge that a copy of this infringement notice and any correspondence related to it, including any contact information I provided above (address, telephone number, and email address), will be forwarded to the user who uploaded the content at issue.\r\n"
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

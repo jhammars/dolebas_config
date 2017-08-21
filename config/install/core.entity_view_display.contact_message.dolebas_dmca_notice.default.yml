@@ -1,0 +1,111 @@
+uuid: ef4ed6f1-8e25-4c01-83b2-2ec075a15b55
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.dolebas_dmca_notice
+    - field.field.contact_message.dolebas_dmca_notice.field_address
+    - field.field.contact_message.dolebas_dmca_notice.field_copyright_holder
+    - field.field.contact_message.dolebas_dmca_notice.field_email
+    - field.field.contact_message.dolebas_dmca_notice.field_i_acknowledge
+    - field.field.contact_message.dolebas_dmca_notice.field_i_have_read
+    - field.field.contact_message.dolebas_dmca_notice.field_i_swear_that
+    - field.field.contact_message.dolebas_dmca_notice.field_material_description
+    - field.field.contact_message.dolebas_dmca_notice.field_material_location
+    - field.field.contact_message.dolebas_dmca_notice.field_original_material_location
+    - field.field.contact_message.dolebas_dmca_notice.field_phone
+  module:
+    - address
+  enforced:
+    module:
+      - dolebas_config    
+id: contact_message.dolebas_dmca_notice.default
+targetEntityType: contact_message
+bundle: dolebas_dmca_notice
+mode: default
+content:
+  field_address:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_copyright_holder:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_email:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_i_acknowledge:
+    weight: 7
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_have_read:
+    weight: 8
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_i_swear_that:
+    weight: 9
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_material_description:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_material_location:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_original_material_location:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_phone:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  message: true

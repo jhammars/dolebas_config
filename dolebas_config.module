@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Contains dolebas_config.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_form_alter().
+ */
+function dolebas_config_form_contact_message_dolebas_dmca_notice_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+
+  $form['actions']['submit']['#value'] = 'Submit';
+}
+
+/**
+ * Implements hook_theme()
+ * @return mixed
+ */
+function dolebas_config_theme() {
+
+  $theme['contact_message_dolebas_dmca_notice_form'] = array(
+    'render element' => 'form',
+  );
+
+  return $theme;
+
+}

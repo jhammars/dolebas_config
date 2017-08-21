@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - dolebas_config
+id: dolebas_dmca_notice
+label: 'Dolebas DMCA Notice'
+recipients:
+  - info@dolebas.com
+reply: 'Thank you'
+weight: 0
+message: ''
+redirect: /
