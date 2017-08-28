@@ -1,0 +1,12 @@
+langcode: en
+status: '1'
+dependencies: {  }
+id: dolebas_url_redirect
+label: 'Dolebas url redirect'
+message: 'No'
+path: 'user/*'
+redirect_path: /
+checked_for: Role
+user: null
+roles:
+  authenticated: authenticated
