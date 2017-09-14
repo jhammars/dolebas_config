@@ -14,3 +14,5 @@ dependencies:
   - drupal:contact
   - drupal:telephone
   - drupal:link
+  - drupal:filter
+  
