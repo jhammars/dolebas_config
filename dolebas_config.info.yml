@@ -15,4 +15,4 @@ dependencies:
   - drupal:telephone
   - drupal:link
   - drupal:filter
-  
+  - drupal:path
